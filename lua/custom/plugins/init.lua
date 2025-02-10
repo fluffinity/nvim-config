@@ -5,7 +5,7 @@
 
 -- Enable spellchecking in markdown files
 vim.api.nvim_create_autocmd({ 'FileType', 'BufRead', 'BufNewFile' }, {
-  pattern = { '*.md' },
+  pattern = { 'markdown', 'text', 'gitcommit', 'plaintext' },
   command = 'setlocal spell spelllang=en_us',
 })
 
