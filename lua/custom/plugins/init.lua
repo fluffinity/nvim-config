@@ -29,4 +29,17 @@ return {
     'akinsho/toggleterm.nvim',
     optional = true,
   },
+
+  -- Markdown related plugins
+  {
+    -- Get rendered output directly when editing
+    'MeanderingProgrammer/render-markdown.nvim',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter',
+      'nvim-tree/nvim-web-devicons',
+    },
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {},
+  },
 }
